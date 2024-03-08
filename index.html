@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialBook | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <a href="#">
+          <img src="images/logo.png" alt="logo" class="logo">
+        </a>
+        <ul>
+          <li><img src="images/notification.png" alt="notification"></li>
+          <li><img src="images/inbox.png" alt="inbox"></li>
+          <li><img src="images/video.png" alt="video"></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="search">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-user-icon online" onclick="settingMenuToggle()">
+          <img src="images/profile-me.png" alt="">
+        </div>
+      </div>
+      <!-- Setting_Menu_Profile -->
+      <div class="setting-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-me.png" alt="profile-me">
+            <div>
+              <p>Sok Sovannarith</p>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="feedback">
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+          <div class="setting-links">
+            <img src="images/setting.png" alt="setting" class="setting-icon">
+            <a href="#">
+              Setting & Privacy
+              <img src="images/arrow.png" alt="arrow" width="10px">
+            </a>
+          </div>
+          <div class="setting-links">
+            <img src="images/help.png" alt="help" class="setting-icon">
+            <a href="#">
+              Help & Suport
+              <img src="images/arrow.png" alt="arrow" width="10px">
+            </a>
+          </div>
+          <div class="setting-links">
+            <img src="images/display.png" alt="display" class="setting-icon">
+            <a href="#">
+              Display & Accessibility
+              <img src="images/arrow.png" alt="arrow" width="10px">
+            </a>
+          </div>
+          <div class="setting-links">
+            <img src="images/logout.png" alt="logout" class="setting-icon">
+            <a href="#">
+              Logout
+              <img src="images/arrow.png" alt="arrow" width="10px">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Left-Sidebar -->
+    <div class="left-sidebar">
+      <div class="imp-links">
+        <a href="#">
+          <img src="images/news.png" alt="news">
+          Latest News
+        </a>
+        <a href="#">
+          <img src="images/friends.png" alt="friends">
+          Friends
+        </a>
+        <a href="#">
+          <img src="images/group.png" alt="group">
+          Group
+        </a>
+        <a href="#">
+          <img src="images/marketplace.png" alt="marketplace">
+          Marketplace
+        </a>
+        <a href="#">
+          <img src="images/watch.png" alt="watch">
+          Watch
+        </a>
+        <a href="#">See More</a>
+      </div>
+      <div class="shortcut-links">
+        <p>Your Shortcuts</p>
+        <a href="#">
+          <img src="images/shortcut-1.png" alt="shortcut-1">
+          Web Developers
+        </a>
+        <a href="#">
+          <img src="images/shortcut-2.png" alt="shortcut-2">
+          Web Design
+        </a>
+        <a href="#">
+          <img src="images/shortcut-3.png" alt="shortcut-3">
+          Full Stack Developers
+        </a>
+        <a href="#">
+          <img src="images/shortcut-4.png" alt="shortcut-4">
+          Website Expert
+        </a>
+      </div>
+    </div>
+    <!-- Main-Content -->
+    <div class="main-content">
+      <div class="story-gallery">
+        <div class="story">
+          <img src="images/upload.png" alt="upload">
+          <p>Post Story</p>
+        </div>
+        <div class="story">
+          <img src="images/member-1.png" alt="member-1">
+          <p>Alison</p>
+        </div>
+        <div class="story">
+          <img src="images/member-2.png" alt="member-2">
+          <p>David</p>
+        </div>
+        <div class="story">
+          <img src="images/member-3.png" alt="member-3">
+          <p>Rose</p>
+        </div>
+        <div class="story">
+          <img src="images/member-4.png" alt="member-4">
+          <p>Joshy</p>
+        </div>
+      </div>
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="images/profile-me.png" alt="profile-me">
+          <div>
+            <p>Sok Sovannarith</p>
+            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+          </div>
+        </div>
+        <div class="post-input-container">
+          <textarea rows="3" placeholder="What's on your mind, Sok Sovannarith?"></textarea>
+          <div class="add-post-links">
+            <a href="#">
+              <img src="images/live-video.png" alt="live-video">
+              Live Video
+            </a>
+            <a href="#">
+              <img src="images/photo.png" alt="photo">
+              Photo/Video
+            </a>
+            <a href="#">
+              <img src="images/feeling.png" alt="feeling">
+              Feeling/Activity
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-me.png" alt="profile-me">
+            <div>
+              <p>Sok Sovannarith</p>
+              <span>March 07 2024, 3:57 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <p class="post-text">
+          Frontend Web Developer <span>@rithevil</span> Happy Coding!
+          <a href="#">#RithEvil</a>
+        </p>
+        <img src="images/feed-image-1.png" alt="feed-image-1" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <img src="images/like-blue.png" alt="like">
+              120
+            </div>
+            <div>
+              <img src="images/comments.png" alt="comments">
+              44
+            </div>
+            <div>
+              <img src="images/share.png" alt="share">
+              13
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-me.png" alt="profile-me">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-me.png" alt="profile-me">
+            <div>
+              <p>Sok Sovannarith</p>
+              <span>May 07 2023, 4:16 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <p class="post-text">
+          Camping Beach <span>@teamwork</span> Happy Holiday!
+          <a href="#">#KohRong</a>
+        </p>
+        <img src="images/feed-image-2.png" alt="feed-image-2" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <img src="images/like-blue.png" alt="like">
+              186
+            </div>
+            <div>
+              <img src="images/comments.png" alt="comments">
+              24
+            </div>
+            <div>
+              <img src="images/share.png" alt="share">
+              3
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-me.png" alt="profile-me">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-me.png" alt="profile-me">
+            <div>
+              <p>Sok Sovannarith</p>
+              <span>June 07 2023, 5:31 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <p class="post-text">
+          Walking down the street <span>@gang_gang</span> Happy Thursday!
+          <a href="#">#PhnomPenh</a>
+        </p>
+        <img src="images/feed-image-3.png" alt="feed-image-2" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <img src="images/like-blue.png" alt="like">
+              122
+            </div>
+            <div>
+              <img src="images/comments.png" alt="comments">
+              54
+            </div>
+            <div>
+              <img src="images/share.png" alt="share">
+              23
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-me.png" alt="profile-me">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-me.png" alt="profile-me">
+            <div>
+              <p>Sok Sovannarith</p>
+              <span>August 07 2023, 5:32 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <p class="post-text">
+          Normal Life <span>@comfort</span> Happy Coding!
+          <a href="#">#Studio</a>
+        </p>
+        <img src="images/feed-image-4.png" alt="feed-image-2" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <img src="images/like-blue.png" alt="like">
+              82
+            </div>
+            <div>
+              <img src="images/comments.png" alt="comments">
+              16
+            </div>
+            <div>
+              <img src="images/share.png" alt="share">
+              11
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-me.png" alt="profile-me">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-me.png" alt="profile-me">
+            <div>
+              <p>Sok Sovannarith</p>
+              <span>November 07 2023, 5:33 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <p class="post-text">
+          Meeting With Boss <span>@hardtime</span> Happy Meeting!
+          <a href="#">#Office</a>
+        </p>
+        <img src="images/feed-image-5.png" alt="feed-image-2" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <img src="images/like-blue.png" alt="like">
+              219
+            </div>
+            <div>
+              <img src="images/comments.png" alt="comments">
+              53
+            </div>
+            <div>
+              <img src="images/share.png" alt="share">
+              28
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-me.png" alt="profile-me">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="load-more-btn">Load More</button>
+    </div>
+    <!-- Right-Sidebar -->
+    <div class="right-sidebar">
+      <div class="sidebar-title">
+        <h4>Event</h4>
+        <a href="#">See All</a>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>06</h3><span>March</span>
+        </div>
+        <div class="right-event">
+          <h4>Social Media</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Phnom Penh</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>01</h3><span>June</span>
+        </div>
+        <div class="right-event">
+          <h4>Sok Sovannarith</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Koh Pich</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="#">Close</a>
+      </div>
+      <img src="images/advertisement.png" alt="advertisement" class="sidebar-ads">
+      <div class="sidebar-title">
+        <h4>Conversation</h4>
+        <a href="#">Hide Chat</a>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-1.png" alt="member-1">
+        </div>
+        <p>Alison Mike</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-2.png" alt="member-2">
+        </div>
+        <p>David Jose</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-3.png" alt="member-3">
+        </div>
+        <p>Rose Sku</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      Copyright 2024 - RithEvil Developer
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
